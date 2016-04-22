@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.zikainfo.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/zika"
+            android:scaleType="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#232d33"
+            android:layout_marginBottom="10dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:textAlignment="center"
+                android:text="Se informe sobre o vírus Zika"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:text="O que é o vírus Zika?"
+            style="@style/HeaderTextStyle"
+            android:onClick="mostrarConteudo1"
+
+
+            />
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/ConteudoTextStyle"
+            android:text="O vírus zika, semelhante ao da dengue e da febre amarela, tem causado vários surtos da doença pelo mundo desde 2007. O Aedes aegypti, transmissor do vírus, pode ser facilmente identificado pela população por apresentar listras em preto e branco nas patas, visíveis a olho nu. Particularmente agressivo, ele é responsável pela transmissão de doenças como a dengue e a chikungunya. "
+            />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/HeaderTextStyle"
+            android:text="Qual o modo de transmissão?"
+            android:onClick="mostrarConteudo2"
+
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/ConteudoTextStyle"
+            android:text="O vírus é transmitido principalmente pelo Aedes, que atua como vetor, isto é, o vírus é inoculado no inseto. O mosquito carrega o vírus sem ser afetado, transmitindo-o através de suas picadas. Assim como em outras doenças similares, apenas a fêmea do mosquito pica humanos e transmite doenças. Além disso, o vírus também pode ser transmitido por via sexual, com casos comprovados nos Estados Unidos e França, entre outros países."
+            />
+
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/HeaderTextStyle"
+            android:text="Quais são seus sintomas?"
+            android:onClick="mostrarConteudo3"
+
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            style="@style/ConteudoTextStyle"
+            android:text="Os sintomas de uma infecção por zika mais comumente observados são febre baixa, erupções cutâneas, dores articulares e/ou musculares e conjuntivite. Geralmente, um caso é considerado suspeito no momento da apresentação dos dois primeiros sintomas acima mencionados e pelo menos dois outros sinais. Apesar destas indicações, cerca de 80% dos casos de infecção pelo vírus zika são assintomáticos, ou seja, não apresentam sintomas. Complicações neurológicas podem ocorrer e exigem vigilância máxima. De maneira já comprovada estão a síndrome de Guillain-Barré, em adultos, e a ocorrência de microcefalia e outras alterações do sistema nervoso central em bebês que foram infectados por gestantes com a doença. Além disso, outros problemas, como a mielite também podem estar associados ao vírus zika. "
+            />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/HeaderTextStyle"
+            android:text="Relação entre a microcefalia e o vírus Zika "
+            android:onClick="mostrarConteudo4"
+            />
+
+        <ImageView
+            android:id="@+id/imgMicro"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:src="@drawable/micro"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/ConteudoTextStyle"
+            android:text="O recente surto da de microcefalia no Brasil, concentrada principalmente nos estados da Região Nordeste, também acendeu o sinal de alerta de autoridades de saúde em todo o mundo sobre um outro efeito bastante perigoso do vírus zika. Ao infectar mulheres grávidas, especialmente no primeiro trimestre de gestação, o vírus favorece o desenvolvimento de microcefalia entre os bebês. A malformação corresponde a um diâmetro do crânio do recém-nascido menor do que a média, o que dificulta o desenvolvimento cognitivo da criança. O vírus zika tende a ser alvo nos próximos anos de muitas pesquisas para que se determine melhor como se dá a relação entre uma infecção e a ocorrência da microcefalia e outras malformações em bebês."
+            />
+
+
+        <Button
+            android:id="@+id/youTube1"
+            style="@style/VideoYouTube"
+            android:visibility="gone"
+            android:onClick="videoButton"
+
+            />
+
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/HeaderTextStyle"
+            android:text="Qual o tratamento necessário?"
+            android:onClick="mostrarConteudo5"
+            />
+
+        <TextView
+            android:id="@+id/text5"
+            style="@style/ConteudoTextStyle"
+            android:text="Assim como para a dengue, não há tratamento antiviral ou vacina contra o zika. O tratamento se baseia unicamente no combate aos sintomas, prescrito de acordo com evidências encontradas. É altamente aconselhável consultar um médico em caso de febre."
+            />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/HeaderTextStyle"
+            android:text="Quais as formas de Prevenção?"
+            android:onClick="mostrarConteudo6"
+            />
+
+        <ImageView
+            android:id="@+id/imgPrevinir"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:src="@drawable/previnir"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/text6"
+            style="@style/ConteudoTextStyle"
+            android:text="Para evitar a proliferação do Aedes e transmissão da doença, é aconselhável eliminar as larvas do mosquito regularmente, esvaziando potes com água parada , cobrindo tanques e protegendo da chuva equipamentos de jardinagem ou outros materiais que possam acumular água. O uso de mosquiteiros e roupas longas ajudam a prevenir picadas. O uso de repelentes de pele também é aconselhável, depois de procurar aconselhamento médico.
+            n/Cuidados de gestantes: O surto de microcefalia no Brasil deve fazer com que grávidas tomem ainda mais cuidado com o vírus zika. Para isso, é recomendado que as gestantes utilizem repelente mesmo quando permanecerem em casa, reforçando o produto a cada 90 minutos. O uso de mosquiteiros e roupas longas é ainda mais aconselhável nesse grupo. Para aquelas que não vivem em regiões afetadas pelo surto de zika, a da Organização Mundial da Saúde é de não viajar para áreas com circulação e transmissão autóctone do vírus. "
+
+            />
+
+
+        <Button
+            android:id="@+id/youTube2"
+            style="@style/VideoYouTube"
+            android:onClick="prevencaoButton"
+            android:layout_marginBottom="30dp"
+
+            />
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#232d33"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+
+            >
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="Agora que você está informado(a) sobre o vírus Zika, por favor realize os seguintes passos:"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/texto_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:text="Marque a(s) opção em que você se identifique:"
+            />
+
+        <CheckBox
+            android:id="@+id/op1_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Você não estava ciente sobre todas as informações passadas."
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"/>
+        <CheckBox
+            android:id="@+id/op2_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Você vai ter(ou planejando) um filho e precisa estar preparado(a)."
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/op3_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Você está sentindo os sintomas e acredita que esteja com o vírus Zika."
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/op4_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Você conhece(ou desconfia que) alguém que estar com Zika e quer aprender mais sobre isso."
+            android:textSize="15sp"
+
+            />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            android:textColor="@android:color/white"
+            android:background="#232d33"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:onClick="finalizar"
+            
+            />
+
+    </LinearLayout>
+</ScrollView>
+
